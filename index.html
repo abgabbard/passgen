@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Random Password Generator</title>
+  </head>
+  <body>
+
+    <h1>Random Password Generator!</h1>
+
+    <script>
+
+// <!--First thought is to create 3 arrays, one for letters, one for numbers, and one for special characters. We will be able to pull from these arrays when we need to generate the password -->
+// Crucial elements: Password length (user choice) - so we will need to loop and choose (based on preferences, else ifs or functions) 
+
+var letters = [A, B, C, D, E, F, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X, Y, Z] 
+var numbers = [0,1,2,3,4,5,6,7,8,9]
+var spechar = ["~","!","@","#","$","%","^","*","(",")","-","_","+","="]
+
+// The user choicees will be:
+                    // How many total characters? Do we give them a limit? 8, 12, 16, 18? or do we want to give them unlimited? Type out how many characters?                     
+                                        // Do you want special characters? Y N
+                                        // //                     
+                                        // Do you want any numbers? Y N/
+                                        // //                    
+                                        //  Do you want capital letterS? Y N 
+                                        // //                     
+                                        // Do you want lower case characters? Y N 
+                                        // //                   
+                                        //   Answers to all except for first question will be T / F 
+
+// How we will generate the password: Generate a random number (math random math floor and integer if needed to pick index between length of each respective array) 
+// from each array to the length of the persons vhoice. Use a loop here to keep grabbing numbers and letter setc. So if their choice is 5
+// characters we want it to loop until 5 characters are pulled. 
+
+
+    </script>
+    
+  </body>
+</html>
+
