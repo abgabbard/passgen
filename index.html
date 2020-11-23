@@ -8,35 +8,56 @@
   <body>
 
     <h1>Random Password Generator!</h1>
-     Create Text Box Below For Generator Output
+     
+    Create Text Box Below For Generator Output
+    
 
 <script type="text/javascript">
 
-// prompt("How many characters do you want your password? Please use whole numbers?");
-// confirm("Do you want special characters?")
-// confirm("Do you want capital letters?")
-// confirm("Do you want lower case letters?")
 var userPwLength = prompt("How many characters do you want your password? Please use whole numbers?")
 var userSpeChar = confirm("Click confirm if you would like Special Characters");
 var userCapLetter = confirm("Click confirm if you would like capital letters?");
 var userLowerLetter = confirm("Click confirm if you would like lowercase letters?");
 var userNumber = confirm("Do you want to use numbers in your password?");
 
+alert("Password Length" + " " + userPwLength + " " + "Special Characters: " + " " + userSpeChar + " " + "Lowercase Letters: " + userLowerLetter + " " + userCapLetter)
+// var generatedPw = "(User Selection (Number)
+//                                  how do we go(ENTER ALGORITHM FOR randomPW Generation - is this the function?).
+// Here is the order:
+                    // 1) GET USER INPUT 2) Amount of Charcters and 10 options or how many ever opttions from T - F - T F F 
+      
+//  Notes from random generator lesson:
+                      //  var computerGuess = computerChoices[Math.floor(Math.random()* computerChoices.length)] and computer choices is the 3 (rps) variables.
+
+                      // var computerRandomIndex = Math.floor(math.random() * userPwLength)
+
+var randPw = "1B3CDEFG23$" // This is just example <- Trying to output something like this.
 console.log(userPwLength);
 console.log(userSpeChar);
 console.log(userCapLetter);
 console.log(userLowerLetter);
 console.log(userNumber);
 
+// This line doesn't work right: alert("Your choices are - Length: " + userPwLength + "special Characters: " + userSpeChar + "Capital Letters: " + userCapLetter+ "Lower Case Letters: " userLowerLetter + "NUmbers: "+ userNumber)
 // <!--First thought is to create 3 arrays, one for letters, one for numbers, and one for special characters. We will be able to pull from these arrays when we need to generate the password -->
 // Crucial elements: Password length (user choice) - so we will need to loop and choose (based on preferences, else ifs or functions) 
-var letters = ["A", "B", "C", "D", "E", "F", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y","Z"] // Will probably need to use ,toLowerCase
+
+var letters = ["A", "B", "C", "D", "E", "F", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y","Z"]; 
+
+// Will probably need to use .toLowerCase for letters below somewhere.
+
 var numbers = [0,1,2,3,4,5,6,7,8,9]
-var speChar = ["~","!","@","#","$","%","^","*","(",")","-","_","+","="]
+
+var speChar = ["~","!","@","#","$","%","^","*","(",")","-","_","+","="];
 
 console.log(letters);
 console.log(numbers);
 console.log(speChar);
+
+// Password = (random number)and(random) index selection from array - looped each time until the length of the number the input under the first question is reached.
+
+// For the Loop 
+// for (var i = 0; i < randompw.length; i++)
 
 // If user wants ALL (Do THIS)
 // If user does not want ANY (DO THIS)
@@ -122,10 +143,9 @@ console.log(speChar);
 // Prompt User: Do you want special characters? Click confirm if so, click cancel if not. 
 // Prompt User: Do you want numbers? Click confirm if so, click cancel if not
 
-
-
     </script>
+    <!-- Trying to figure out how to print a js variable to HTML after input. -->
     
-  </body>
+    <P></P>
+    User Password Generated: <script>document.getElementById("ranPw").innerHTML = randPw</script>
 </html>
-
