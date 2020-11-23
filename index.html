@@ -7,6 +7,7 @@
   <body>
 
     <h1>Random Password Generator!</h1>
+     Create Text Box Below For Generator Output
 
     <script>
 
@@ -16,7 +17,28 @@
 var letters = [A, B, C, D, E, F, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X, Y, Z] 
 var numbers = [0,1,2,3,4,5,6,7,8,9]
 var spechar = ["~","!","@","#","$","%","^","*","(",")","-","_","+","="]
+var userPwLength = prompt("How many characters do you want your password? Please use whole numbers?")
+var userSpecChar = confirm("Do you want special characters?")
+var userCapLetter = confirm("Do you want capital letters?")
+var userLowerLetter = confirm("Do you want lower case letters?")
+var userNumber = confirm("Do you want to use numbers?")
+//  Above can be polished ^ can we do something with properties? User and the properties will be
+// Spec Char boolean answer Number boolean answer etc.
+//  We can take the approach above - or we can set a condition that makes it alert if an integer is not input. Where it prompts them right away. Instead of after the fact.
 
+
+//                                                                        IDEAS FOR USER INPUT AND LOOPS
+// The loop will depend on how many characters the user selects. So userselection will be the variable in the loop: 
+// (var i = 0; i < userSelection.length; i++) We want to say "As long as the number of returned characters in the PW is less than the number the user selected
+// we want to run through the random generator.
+// CREATE A USER INPUT VARIABLE AND USE LENGTH to Get Length. Then use this value in your looping. "Is number integer? If not prompt user to enter whole number / Integer"
+// So KEEP LOOPING THIS UNTIL WE HIT USER INPUT LENGTH 
+
+
+
+// Conditions if they choose 12 characters, and True for every question.
+            //Length of userselection: 12 Pick up to 12 RANDOM letters numbers and characters .
+ 
 // The user choicees will be:
                     // How many total characters? Do we give them a limit? 8, 12, 16, 18? or do we want to give them unlimited? Type out how many characters?                     
                                         // Do you want special characters? Y N
@@ -32,6 +54,13 @@ var spechar = ["~","!","@","#","$","%","^","*","(",")","-","_","+","="]
 // How we will generate the password: Generate a random number (math random math floor and integer if needed to pick index between length of each respective array) 
 // from each array to the length of the persons vhoice. Use a loop here to keep grabbing numbers and letter setc. So if their choice is 5
 // characters we want it to loop until 5 characters are pulled. 
+
+
+
+
+// Prompt User: Do you want special characters? Click confirm if so, click cancel if not. 
+// Prompt User: Do you want numbers? Click confirm if so, click cancel if not
+
 
 
     </script>
