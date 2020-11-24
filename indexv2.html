@@ -12,9 +12,9 @@
 var letters = ["A", "B", "C", "D", "E", "F", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y","Z"]
 var numbers = [0,1,2,3,4,5,6,7,8,9]
 
-UserPwLength = prompt("How many characters do you want your password? Please use whole numbers?")    
+UserPwLength = prompt("How long do you want your password to be?")    
 console.log(UserPwLength)
-// Now we need to make this randomly choose the index - and we want it to choose randomly between letters and numbers equally. 
+// Now we need to make this randomly choose the index - and we want it to choose randomly between letters and numbers equally but we will fix that up later.
 
 // So we can do mathrandom for both arrays (if applicable): and math random choose index in array
 
@@ -28,14 +28,14 @@ console.log(randomNumbers)
 alert(randomNumbers)
 
 // I previously was printing the below variable to console but I decided to stop printing it and just create a new variable "ran1" for random number 1. I know this will change and be easier later.
-var ran1 = (letters[randomNumbers])
+var ran1 = (letters[randomLetter])
+var ran2 = (numbers[randomNumbers])
+// In order to create a real variable 2 below (for a second random number) I need to loop the above generation of random numbers a second time to create the second random variable.
 
-// In order to create variable 2 below (for a second random number) I need to loop the above generation of random numbers a second time to create the second random variable.
 
-var ran2 = 
+alert("User Password Generated: " + "Random Number: " + ran1 + ran2)
 
-// This works but doesn't seem right. 
-alert("User Password Generated: " + "Random Number: " + " " + ran1)
+// I've gotten results of U2 and C7 so I know the above statements for var ran1 and ran2 are working!
 
 </script>
 
