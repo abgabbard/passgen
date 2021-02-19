@@ -11,6 +11,9 @@ function writePassword() {
 var letters = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y","Z"]
 
 function generatePassword(){
+        var passwordLength = prompt("How long would you like your password to be? \nPlease enter a number between 8 and 24")
+        if (passwordLength  >=24) {console.log("too long")} 
+        else (console.log("not too long"))
         var passwordLength
         //     return "Password123!"; 
             var randomIndex = Math.floor(Math.random()*23)
@@ -25,42 +28,33 @@ function generatePassword(){
         //  passwordNumber = True or False
 
 }
-var letters = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y","Z"]
-var lettersLower = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y","z"]
-var numbers = [0,1,2,3,4,5,6,7,8,9]
-var speChar = ["~","!","@","#","$","%","^","*","(",")","-","_","+","="];
+// var letters = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y","Z"]
+// var lettersLower = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y","z"]
+// var numbers = [0,1,2,3,4,5,6,7,8,9]
+// var speChar = ["~","!","@","#","$","%","^","*","(",")","-","_","+","="];
 
-var passwordLength = prompt("How long would you like your password to be? \nPlease enter a number between 8 and 24")
-if (passwordLength  >=24) { 
-alert("Come on bro thats too long")        
-} else {
-        console.log(passwordLength)
-}
-var passwordUpper = confirm("Do you want UPPER CASE letters?")
+// var passwordLength = prompt("How long would you like your password to be? \nPlease enter a number between 8 and 24")
+// if (passwordLength  >=24) { 
 
-var passwordLower = confirm("DO you want lower case letters?")
+// var passwordUpper = confirm("Do you want UPPER CASE letters?")
 
-var passwordSpecial = confirm("Do you want $peci@l characters in your password?")
+// var passwordLower = confirm("DO you want lower case letters?")
 
-var passwordNumber = confirm("Do you want numbers in your password?")
+// var passwordSpecial = confirm("Do you want $peci@l characters in your password?")
 
-var availChars = [];
+// var passwordNumber = confirm("Do you want numbers in your password?")
+
+// var availChars = [];
 
 
 
-console.log(passwordUpper)
+// console.log(passwordUpper)
 
-console.log(passwordLower)
+// console.log(passwordLower)
 
-console.log(passwordSpecial)
+// console.log(passwordSpecial)
 
-console.log(passwordNumber)
-
-if (passwordLower = true) {
-        console.log("It is not false.")
-} else {
-        console.log("It is false I suppose!")
-}
+// console.log(passwordNumber)
 
 
         // If they choose True True True True; when generating the PASSWORD it should choose AT LEAST one character from all 4: letters / lettersLower / specChar / numbers
